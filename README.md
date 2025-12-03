@@ -2,13 +2,13 @@ FlexPilot
 
 Modern, real-time station control & automation for FlexRadio.
 
-FlexPilot is a next-generation, cross-platform control and automation application for FlexRadio operators.
+FlexPilot is a next-generation, cross-platform control and automation application for FlexRadio operators. Works as a companion to SmartSDR or completely stand-alone.
 It unifies radio control, rotators, amplifiers, antenna switching, audio routing, CW keying, and smart automation into one fast, modern interface—built for serious operators and modern shacks.
 
 🚀 Features
 🎛️ Radio Control
 
-Ultra-low-latency CAT control (Built in hamlib)
+Built in Hamlib server for interfacing with other software
 
 Slice, frequency, filter, and mode adjustments
 
@@ -18,27 +18,33 @@ DAX management with automatic routing
 
 Profiles, memories & presets
 
+Cluster Aggregation and Spot updates
+
+Hotkeys - Map your own hotkeys
+
+Stream Deck support
+
+Hardware PTT [Schematic](https://community.flexradio.com/discussion/8023558/frstack-and-remote-ptt)
+
+CW Interface [Morconi](https://www.morconi.com/)
+
 🛰️ Station Automation
 
-Node-RED–style rule builder
+Node-RED–style rule builder (WIP)
 
 Event-based triggers (band, SWR, PTT, temp, rotation, etc.)
 
-Multi-step macros & workflows
+Multi-step macros & workflows (WIP)
 
 Safety rules (SWR guard, overheat guard, TX inhibit)
 
 🔌 Device Integration
 
-Rotators: ERC-USB, Yaesu, Green Heron & custom controllers
+Rotators: ERC-USB
 
-Amplifiers: ACOM, SPE & API-friendly amps
+Amplifiers: ACOM & API-friendly amps
 
-Antenna Switches: Multi-port coax switches
-
-Keyers: CW keyer integration & monitoring
-
-Relays & GPIO: ESP32, USB relays & sequencers
+Antenna Switches via MQTT or REST
 
 🔊 Audio & Routing
 
@@ -46,9 +52,7 @@ High-quality audio management
 
 Visual monitoring of DAX streams
 
-Recording & playback tools
-
-Intelligent audio device mapping
+Recording & playback tools (Replay last 5-60 seconds)
 
 📊 Station Insights
 
@@ -59,14 +63,6 @@ Per-device health monitoring
 Alerts & notifications
 
 Session logs & activity timeline
-
-🌐 Remote Operation
-
-Secure remote access
-
-Low-bandwidth optimized
-
-Perfect for remote stations or contest setups
 
 🖥️ Cross-Platform
 
@@ -86,7 +82,5 @@ Linux
 Avalonia UI (clean, cross-platform desktop UI)
 
 ReactiveUI (predictable state management)
-
-Serilog (structured logging)
 
 SQLite (local persistence)
